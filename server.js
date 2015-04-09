@@ -161,6 +161,7 @@ var Comms = (function() {
         
         if (HueInitialized)
         {
+            console.log(packet.payload.seconds_left + "s");
             setLights(packet.payload.seconds_left);
         }
     }
