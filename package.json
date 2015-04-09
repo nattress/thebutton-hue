@@ -1,0 +1,30 @@
+{
+  "name": "thebutton-hue",
+  "version": "0.0.0",
+  "description": "Change Philips Hue lights to colors reflecting the current state of thebutton",
+  "main": "server.js",
+  "dependencies": {
+    "node-hue-api": "^1.0.5",
+    "websocket": "^1.0.18",
+    "xmlhttprequest": "^1.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nattress/thebutton-hue"
+  },
+  "keywords": [
+    "thebutton",
+    "hue"
+  ],
+  "author": "Simon Nattress",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nattress/thebutton-hue/issues"
+  },
+  "homepage": "https://github.com/nattress/thebutton-hue"
+}
