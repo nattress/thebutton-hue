@@ -2,6 +2,10 @@
 
 nodejs application that reads the current seconds remaining on r/thebutton, maps it to the appropriate subreddit flair colour, and sets all Philips Hue lights on your network to that colour in realtime.
 
+### Demo
+
+[![Demonstration video](http://img.youtube.com/vi/IJ2USEcRBKc/0.jpg)](https://www.youtube.com/watch?v=IJ2USEcRBKc)
+
 ### Installation
 
   - npm install nattress/thebutton-hue
