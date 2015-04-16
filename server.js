@@ -47,8 +47,11 @@ function turnOnLights()
         console.log(lights.lights);
         for (var i = 0; i < lights.lights.length; i++)
         {
-            console.log("Enabling light " + lights.lights[i].id);
-            api.setLightState(lights.lights[i].id, state.on()).done();
+            if(lights.lights[i].type=="Extended color light") 
+            {
+                console.log("Enabling light " + lights.lights[i].id);
+                api.setLightState(lights.lights[i].id, state.on()).done();
+            }
         }
     });
 }
@@ -82,7 +85,10 @@ function setLights(timeRemaining)
         
         for (var i = 0; i < lights.lights.length; i++)
         {
-            api.setLightState(lights.lights[i].id, state.on().rgb(rgb)).done();
+            if(lights.lights[i].type=="Extended color light") 
+            {
+                api.setLightState(lights.lights[i].id, state.on().rgb(rgb)).done();
+            }
         }
     });
 }
